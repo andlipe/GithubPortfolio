@@ -1,5 +1,5 @@
 # Portfolio
-<img src=" https://i.imgur.com/DLvW1FR.png" width="500"/>  
+<img src="https://i.imgur.com/DLvW1FR.png" width="500"/>  
 
 ## Sobre o Projeto
 
