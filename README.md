@@ -28,9 +28,16 @@ git clone https://github.com/your_username_/Project-Name.git
 ```sh
 npm install
 ```
-3. Configure o nome do seu usuário do GitHub no arquivo /src/pages/Portfolio.jsx na linha 16
+3. Configure o nome do seu usuário do GitHub no arquivo /src/pages/Portfolio.jsx na linha 28 (Por padrão o meu usário vem configurado)
+```sh
+fetchUserData('andlipe')
+```
 4. Faça alterações necessárias no CSS para configurar o markdown
 5. Gera a build para produção do seu portfolio
 ```sh
-npm build
+npm run-script build
 ```
+
+## Protótipo do Projeto
+
+[Figma](https://www.figma.com/file/OXHjdi6c6suwKoVcTzGa1q/Portfolio?node-id=0%3A1)

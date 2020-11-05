@@ -8,16 +8,18 @@ const backdrop = {
     hidden: { opacity: 0 }
 }
 
- 
-
 const Modal = ({ showModal, setShowModal, projectName, repoOwner }) => {
     const [markdown, setMarkdown] = React.useState('');
+    const isInitialMount = React.useRef(true);
 
     React.useEffect(() =>  {
-        
+        if (isInitialMount.current) {
+            isInitialMount.current = false;
+        } else {
         fetch(`https://raw.githubusercontent.com/${repoOwner}/${projectName}/master/README.md`)
             .then((response) => response.text())
             .then(result => setMarkdown(result))
+        }    
     }, [projectName])
 
     return (
@@ -28,11 +30,9 @@ const Modal = ({ showModal, setShowModal, projectName, repoOwner }) => {
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
+                onClick={() => setShowModal(false)}
                 >
-                    <ModalCard>
-                        <button onClick={() => setShowModal(false)}>
-                            X
-                        </button>
+                    <ModalCard >
                         <ReactMarkdownWithHtml source={markdown} allowDangerousHtml/>
                     </ModalCard>
                 </ModalDiv>
