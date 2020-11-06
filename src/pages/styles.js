@@ -14,13 +14,16 @@ export const Container = styled.div`
         font-size: 25px;
         color: #004C83;
         margin: 15px;
-        margin-top: 0px;
+        margin-top: 15px;
+        margin-bottom: 5px;
         margin-left: 50px; 
         align-self: baseline;
     }
 
     @media(min-width: 600px) {
         .projectsH1 {
+            margin: 15px;
+            margin-top: 0px;
             align-self: center;
         }    
     }
@@ -31,6 +34,7 @@ export const Footer = styled.div`
     clear: both;
     width: 100%;
     height: 50px;
+    margin-top: 20px;
     background-color: #004C83;
     background: url(${Background}) no-repeat center;
 

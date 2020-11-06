@@ -14,7 +14,7 @@ export const ProjectList = styled(motion.div)`
 export const Button = styled.button`
     font-size: 20px;
     border-style: none;
-
+    margin-top: 10px;
     margin-bottom: 15px;
     padding: 10px;
     background-color: inherit;
