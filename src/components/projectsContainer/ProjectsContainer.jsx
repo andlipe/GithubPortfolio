@@ -16,6 +16,7 @@ const ProjectsContainer = ({ reposUrl, initialMount, userData }) => {
     React.useEffect(() => {
         if (initialMount.current) {
         initialMount.current = false;
+        
         }else {
         fetch(`${reposUrl}?page=${page}&per_page=3&sort=updated`,{
             headers : { 

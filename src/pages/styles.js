@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Background from '../assets/Background.svg'
 
 
 export const Container = styled.div`
@@ -36,7 +35,7 @@ export const Footer = styled.div`
     height: 50px;
     margin-top: 20px;
     background-color: #004C83;
-    background: url(${Background}) no-repeat center;
+    background: url("/assets/Background.svg") no-repeat center;
 
 `
 

@@ -30,7 +30,7 @@ function Portfolio() {
   
   React.useEffect(() =>  {
     if (isInitialMount.current) {
-      isInitialMount.current = false;
+      
     } else {
       fetch(`https://raw.githubusercontent.com/${userData.login}/${userData.login}/master/README.md`)
       .then((response) => response.text())

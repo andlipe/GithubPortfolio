@@ -17,7 +17,8 @@ const Modal = ({ showModal, setShowModal, projectName, repoOwner }) => {
             isInitialMount.current = false;
         } else {
         fetch(`https://raw.githubusercontent.com/${repoOwner}/${projectName}/master/README.md`)
-            .then((response) => response.text())
+            .then((response) => 
+                response.text())
             .then(result => setMarkdown(result))
         }    
     }, [projectName])
@@ -33,6 +34,7 @@ const Modal = ({ showModal, setShowModal, projectName, repoOwner }) => {
                 onClick={() => setShowModal(false)}
                 >
                     <ModalCard >
+                        {console.log(markdown)}
                         <ReactMarkdownWithHtml source={markdown} allowDangerousHtml/>
                     </ModalCard>
                 </ModalDiv>

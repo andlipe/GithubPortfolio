@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Background from '../../assets/Background.svg'
 
 export const BackgroundBlue = styled.div`
     background-color: #004C83;
@@ -9,7 +8,7 @@ export const BackgroundBlue = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(${Background}) no-repeat center;
+    background: url("/assets/Background.svg") no-repeat center;
     .profile_photo {
         display: flex;
         justify-content: center;

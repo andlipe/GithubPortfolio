@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "framer-motion": "^2.9.4",
+    "next": "^10.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.2",
@@ -12,6 +13,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "dev": "next dev",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.4",
+    "babel-plugin-styled-components": "^1.11.1"
   }
 }

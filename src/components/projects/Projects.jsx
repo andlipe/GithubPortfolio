@@ -1,7 +1,7 @@
 import React from 'react';
+import Image from 'next/image'
 import Modal from '../modal/Modal';
 import { ProjectBox } from './styles';
-import GitHubMark from '../../assets/GitHub-Mark.png';
 
 const Projects = (props) => {
     const [repo, setRepo] = React.useState({});
@@ -44,7 +44,15 @@ const Projects = (props) => {
                     {languages}
                 </span>
                 <a href={repo.html_url}>
-                    <img src={GitHubMark} alt="Github Icon"/>
+                    <Image 
+                    src="/assets/GithubMark.svg" 
+                    width={40} 
+                    height={40} 
+                    alt="Github Icon"
+                    layout='fixed'
+                    quality={100}
+                    
+                    />
                 </a>
             </div>
         </ProjectBox>
