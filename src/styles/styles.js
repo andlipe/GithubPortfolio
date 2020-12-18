@@ -36,7 +36,6 @@ export const Footer = styled.div`
     margin-top: 20px;
     background-color: #004C83;
     background: url("/assets/Background.svg") no-repeat center;
-
 `
 
 

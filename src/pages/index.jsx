@@ -3,7 +3,7 @@ import Header from "../components/header/Header.jsx";
 import MarkdownContainer from "../components/markdownContainer/MarkdownContainer.jsx";
 import ProjectsContainer from "../components/projectsContainer/ProjectsContainer.jsx";
 
-import { Container, Footer } from './styles.js';
+import { Container, Footer } from '../styles/styles.js';
 
 
 function Portfolio() {
