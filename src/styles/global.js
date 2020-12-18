@@ -4,18 +4,15 @@ const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     outline: 0;
+    font-family: Roboto,serif;
   }
 
   body {
     max-width: 100vw;
     background: #F3F3F3;
     -webkit-font-smoothing: antialiased;
-  }
-
-  body, input, button {
-    font-family: 'Roboto', serif;
   }
 
   h1, h2, h3, h4, h5, h6, strong {

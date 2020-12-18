@@ -14,7 +14,6 @@ const Projects = (props) => {
 
     React.useEffect(() => {
         const repoFromProp = props.repo;
-        
         setRepo(repoFromProp)
     }, []);
 
@@ -28,7 +27,6 @@ const Projects = (props) => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeIn", stiffness: 300, damping: 30, duration: 0.5 }}
-
             onClick={() => handleClick()}
         >
             <div className="cardHeader">
@@ -51,7 +49,6 @@ const Projects = (props) => {
                     alt="Github Icon"
                     layout='fixed'
                     quality={100}
-                    
                     />
                 </a>
             </div>
