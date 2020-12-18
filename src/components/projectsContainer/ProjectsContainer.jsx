@@ -7,17 +7,18 @@ const ProjectsContainer = ({ reposUrl, initialMount, userData }) => {
     const [repos, setRepos] = React.useState([]);
     const [page, setPage] = React.useState(1);
 
-    const fetchRepos =  ( nextPage ) => {
+    const loadMoreRepos =  ( nextPage ) => {
         setPage(page + nextPage)
         if(page < 1) {
         setPage(1)
         }
     }
+
     React.useEffect(() => {
         if (initialMount.current) {
         initialMount.current = false;
-        
-        }else {
+
+        }else {console.log(reposUrl)
         fetch(`${reposUrl}?page=${page}&per_page=3&sort=updated`,{
             headers : { 
             'Content-Type': 'application/json',
@@ -53,7 +54,7 @@ const ProjectsContainer = ({ reposUrl, initialMount, userData }) => {
                 <h2>Sem Projetos cadastrados</h2>
                 }
             </ProjectList>
-            <Button onClick={() => fetchRepos(1)}>CARREGAR MAIS</Button>
+            <Button onClick={() => loadMoreRepos(1)}>CARREGAR MAIS</Button>
         </AnimatePresence>
     );
 }
